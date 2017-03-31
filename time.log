@@ -1,0 +1,22 @@
+ESTIMATE of time to complete assignment: 10 hours
+
+           Time     Time
+     Date  Started  Spent Work completed
+     ----  -------  ----  --------------
+     3/23  4:00pm   0:30  Read Spec and began implementing functions specified in btree.h
+     3/23  4:30pm   0:30  Began work on treeSize and treeHeight
+     3/24  10:30am  0:30  Began working on treeSearch 
+     3/24  2:00pm   0:30  Began working on function to print tree in different orders
+     3/27  4:00pm   0:30  Used btreetest/btreetestargs to test that tree implemented correctly.  Had to tweak printing 
+     3/27  4:30pm   0:30  Began implementing cloud.c.  Began by adding some basic error checking and familiarizing myself with what cloud.c should do
+     3/28  5:30pm   0:30  Continued working on cloud.c.  Can now read in input and created function to test if current token has any non-alphabetic characters in it
+     3/29  1:00pm   0:30  Created function to test if token already exists in the linked list, and added logic to lowercase token before it's added to tree
+     3/30  1:30pm   0:30  Added more error checking and added printing of words over threshold 
+     3/30  2:00pm   0:30  Corrected order of print statements.  Added in ability to print html code
+     3/30  2:30pm   0:30  Created html file and checked my results against correct results. Seems as though my word cloud is the same for alice.txt 
+                    ----
+                    5:30  TOTAL time spent
+
+     I discussed my solution with: No other students.
+
+     **
