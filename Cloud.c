@@ -14,6 +14,8 @@ int inorder = 0;
 int preorder = 0;
 int postorder = 0;
 int html = 0;
+// This file uses a binary search tree to read in words from standard input and create a word cloud using html
+// Allows for printing of the tree in 3 different ways: inorder, preorder, and postorder 
 
 bool checkToken(char *token);
 bool checkList(struct node *root, char *token);
