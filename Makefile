@@ -1,32 +1,13 @@
-## Makefile
+CC =gcc
 
-CC     = gcc
-# CFLAGS = -g3 -std=gnu99 -pedantic -Wall
-CFLAGS = -std=c99 -pedantic -Wall
-HWK    = /c/cs223/hw5
+CFLAGS =-std=c99 -pedantic -Wall 
 
-Cloud:  Cloud.o btree.o
-	${CC} ${CFLAGS} -o Cloud Cloud.o btree.o
+HWK = /c/cs223/Hwk2
 
-Cloud.o: Cloud.c
-	${CC} ${CFLAGS} -c Cloud.c
+Pack: Pack.o
+	$(CC) $(CFLAGS) -o Pack Pack.o
 
-## add stuff for btree's
+Subst16: Subst16.o library.o
+	$(CC) $(CFLAGS) $^ -o $@
 
-btreetest: btreetest.o btree.o
-	${CC} ${CFLAGS} -o btreetest btreetest.o btree.o
-
-btreetest.o: btreetest.c /c/cs223/hw5/btree.h 
-	${CC} ${CFLAGS} -c btreetest.c
-
-btreetestargs: btreetestargs.o btree.o
-	${CC} ${CFLAGS} -o btreetestargs btreetestargs.o btree.o
-
-btreetestargs.o: btreetestargs.c /c/cs223/hw5/btree.h 
-	${CC} ${CFLAGS} -c btreetestargs.c
-
-btree.o: btree.c
-	${CC} ${CFLAGS} -c btree.c
-
-clean:
-	rm -i *.o *~
+Subst16.o library.o: library.h
