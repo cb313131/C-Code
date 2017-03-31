@@ -1,0 +1,23 @@
+ESTIMATE of time to complete assignment: 12 hours
+
+           Time     Time
+     Date  Started  Spent Work completed
+     ----  -------  ----  --------------
+     1/22  1:00pm   1:00  Read assignment and relevant material in K&R
+     1/22  2:00pm   1:00  Built out logic to handle positive integers
+     1/22  3:00pm   1:00  Built out logic to handle positive octal and binary.  Began working on hexadecimal 
+     1/22  4:00pm   1:00  Built out logic for hexadecimal and began working on negative numbers
+     1/23  8:00pm   1:00  Continued work on negative numbers - at this point pass half of tests 
+     1/24  1:00pm   0:30  Realized that code did not handle negative numbers properly.  Fixed this issue
+     1/24  1:30pm   0:30  Began working on mygetchar() - started to deal with line splices.  Pass 7/12 tests
+     1/24  2:00pm   0:30  Implemented dealing with line splices.  Moving onto comments/quotations
+     1/24  2:30pm   0:30  Built out logic to deal with quotations.  Pass 10/12 tests
+     1/24  3:00pm   0:30  Realized code had issue with large numbers.  Debugged the problem.  11/12 tests passed
+     1/25  4:00pm   0:30  Debugged logical error with quotations.  12/12 public tests passed  
+     1/25  4:30pm   0:30  Wrote about major difficulties and commented/checked code
+                    ----
+                    8:30  TOTAL time spent
+
+     I discussed my solution with: No other students.
+
+     *The first road block for this problem was figuring out the most efficient way to handle the 4 different types of numbers that could be input.  It took me some time to realize the importance of the ungetchar() function in this regard.  The next difficulty was understanding and implementing the correct handling of negative numbers.  At first, I accumulated negative signs and made the number negative if there were an odd number of negative signs before a number, but I then realized that this was incorrect.  After that, the hardest challenge was dealing with quotations - it took me a while to implement the while loop infrastructure to solve this problem.*
