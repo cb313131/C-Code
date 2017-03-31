@@ -4,7 +4,10 @@
 #include <ctype.h>
 #include <string.h>
 #include "hash.h"
-
+/*
+Hashtable implementation to store words from a dictionary read in at the command line.  This file contains all functions necessary
+for functional hash table
+*/
 
 
 struct elt {
