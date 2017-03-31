@@ -4,7 +4,10 @@
 #include <ctype.h>
 #include <string.h>
 #include "hash.h"
-
+/*
+This function reads in either numbers or a word from the command line.  If it reads a word, it outputs a potential number to match the
+word based on its letters.  If it reads a number, it searches the hashtable for words potentially the number and prints them
+*/
 
 
 int MatchDisplay(Hash hashtable, int number[], int current, char output[], int num_length, int matches){
