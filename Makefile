@@ -1,11 +1,13 @@
-CC=gcc
+CC =gcc
 
-CFLAGS=-std=c99 -Wall -pedantic -g3
+CFLAGS =-std=c99 -pedantic -Wall 
 
-Total: Total.o
-	$(CC) $(CFLAGS) -o $@ $^
+HWK = /c/cs223/Hwk2
 
-Total.o: Total.c
+Pack: Pack.o
+	$(CC) $(CFLAGS) -o Pack Pack.o
 
-clean: 
-	rm -f *.o "week 1"
+Subst16: Subst16.o library.o
+	$(CC) $(CFLAGS) $^ -o $@
+
+Subst16.o library.o: library.h
