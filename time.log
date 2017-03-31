@@ -3,20 +3,26 @@ ESTIMATE of time to complete assignment: 10 hours
            Time     Time
      Date  Started  Spent Work completed
      ----  -------  ----  --------------
-     3/23  4:00pm   0:30  Read Spec and began implementing functions specified in btree.h
-     3/23  4:30pm   0:30  Began work on treeSize and treeHeight
-     3/24  10:30am  0:30  Began working on treeSearch 
-     3/24  2:00pm   0:30  Began working on function to print tree in different orders
-     3/27  4:00pm   0:30  Used btreetest/btreetestargs to test that tree implemented correctly.  Had to tweak printing 
-     3/27  4:30pm   0:30  Began implementing cloud.c.  Began by adding some basic error checking and familiarizing myself with what cloud.c should do
-     3/28  5:30pm   0:30  Continued working on cloud.c.  Can now read in input and created function to test if current token has any non-alphabetic characters in it
-     3/29  1:00pm   0:30  Created function to test if token already exists in the linked list, and added logic to lowercase token before it's added to tree
-     3/30  1:30pm   0:30  Added more error checking and added printing of words over threshold 
-     3/30  2:00pm   0:30  Corrected order of print statements.  Added in ability to print html code
-     3/30  2:30pm   0:30  Created html file and checked my results against correct results. Seems as though my word cloud is the same for alice.txt 
+     1/27  2:00pm   0:30  Began reading the problem and associated resources to better understand task
+     1/27  2:30pm   0:30  Created Makefile, began working on basic error checking for Pack.c
+     1/27  3:00pm   0:30  Implemented error checking for no algorithm, bogus algorithm, invalid size
+     1/27  4:00pm   0:30  Began implementing method to store size values.  Also finished error checking
+     1/27  4:30pm   0:30  Implemented the next algorithm
+     1/28  12:30pm  1:00  Implemented the first algorithm   
+     1/28  1:30pm   1:00  Implemented the best algorithm
+     1/28  7:00pm   0:30  Created a function that does first algorithm.  Implemented ffd using this function
+     1/28  7:30pm   0:30  Created function that does best algorithm.  Implemented bfd using this function 6/10 passed
+     1/29  1:00pm   1:00  Noticed logical flaw in bfd/ffd, began working on a fix.  Began implementing trace
+     1/29  2:00pm   1:00  Implemented trace.  
+     1/29  6:00pm   0:30  Worked on debugging trace/ordering the output.  8/10 tests passed
+     1/29  6:00pm   0:30  Continued work on debugging trace and ordering the output 10/10 tests passed
+     2/1   1:00pm   0:30  Added logic to handle 0 size arguments with the trace flag present 
+     2/2   7:45pm   1:00  Debugged code for multiple same flags and trace flag issues.  Began implementing optm
+     2/3   2:30pm   0:30  Debugged code for multiple trace flags and output when zero size arguments
+     2/13  4:15pm   0:30  Debugged best algorithm 
                     ----
-                    5:30  TOTAL time spent
+                    11:00  TOTAL time spent
 
      I discussed my solution with: No other students.
 
-     **
+     *One of the biggest challenges was implementing the best function properly because it was more complicated than either first or next due to the fact that you had to check every bin to make sure that you are finding the best fit.  After that, it was difficult to implement trace because it meant that the output/output ordering had to be changed and this was difficult to implement correctly.  It was difficult to implement because I implemented it after having written the rest of the code, so I had to go back and add many if statements to check if there was a trace flag, and it took a long time to figure out exactly how the output should work when the trace flag was input.  I also found the error checking much more involved than in Total because there are far more ways in which the input could contain an error*
