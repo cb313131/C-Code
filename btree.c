@@ -6,6 +6,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <assert.h>
+// This file containts the functions necessary to implement a binary search tree
 
 // function creates and initializes new node
 // sets the key equal to the key fed in.  Sets count to 1 and left/right/next pointers to null 
